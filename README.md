@@ -35,8 +35,10 @@ After docker's containers are up for the hello_world’s stack:
 
 
 Info and links that it would be helpful:
-PHP-FPM (FastCGI Process Manager) is an alternative to FastCGI implementation of PHP with some additional features useful for sites with high traffic. It is the preferred method of processing PHP pages with NGINX and is faster than traditional CGI based methods such as SUPHP or mod_php for running a PHP script
-https://www.php.net/supported-versions.php
-https://docs.docker.com/compose/compose-file/compose-versioning/
-https://symfony.com/doc/current/setup.html
-https://stackoverflow.com/questions/61344927/when-using-docker-compose-3-8-getting-version-is-unsupported-error
+
+PHP-FPM (FastCGI Process Manager) is an alternative to FastCGI implementation of PHP with some additional features useful for sites with high traffic. It is the preferred method of processing PHP pages with NGINX and is faster than traditional CGI based methods such as SUPHP or mod_php for running a PHP script.
+
+1) https://www.php.net/supported-versions.php
+2) https://docs.docker.com/compose/compose-file/compose-versioning/
+3) https://symfony.com/doc/current/setup.html
+4) https://stackoverflow.com/questions/61344927/when-using-docker-compose-3-8-getting-version-is-unsupported-error
