@@ -14,7 +14,7 @@ Lets encrypt service is not putted into the docker-compose.yml cause I don’t h
 Let’s get started with the hello_world stack:
 
 1. Make sure the port numbers (5346 for the outside port for mysql and the 9002 for the outside outside port of symfony are not used else the containers will not up).
-2. Create a docker’s network if it does not exists: docker network create hello-world-network
+2. Create a docker’s network if it does not exist: docker network create hello-world-network
 3. Build: docker-compose build –no-cache
 4. Up the containers: docker-compose up -d
 
