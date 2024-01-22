@@ -34,7 +34,7 @@ After docker's containers are up for the hello_world’s stack:
 
 
 
-Info and links that it would be helpful:
+Links that it would be helpful:
 
 PHP-FPM (FastCGI Process Manager) is an alternative to FastCGI implementation of PHP with some additional features useful for sites with high traffic. It is the preferred method of processing PHP pages with NGINX and is faster than traditional CGI based methods such as SUPHP or mod_php for running a PHP script.
 
