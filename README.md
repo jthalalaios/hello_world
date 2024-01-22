@@ -11,15 +11,15 @@ Some info about docker-compose.yml before running the commands below. 1. docker-
 
 Lets encrypt service is not putted into the docker-compose.yml cause I don’t have domains names to make the certifications. Moreover, on the same path that there is the docker-compose.yml file there is a hidden file named .env and it has the environment variables to run the docker stack. Also, there is a hidden file named .gitignore that it is used to keep away from pushing to git files or folders that we don’t want it.
 
-Let’s get started with the movieWorld- stack:
+Let’s get started with the hello_world stack:
 
 1. Make sure the port numbers (5346 for the outside port for mysql and the 9002 for the outside outside port of symfony are not used else the containers will not up).
 2. Create a docker’s network if it does not exists: docker network create hello-world-network
 3. Build: docker-compose build –no-cache
 4. Up the containers: docker-compose up -d
 
-After docker's containers are up for the movieWorld’s stack: 
-1. Go inside movieworld-api container with the following command: docker exec -it php-hello_world bash
+After docker's containers are up for the hello_world’s stack: 
+1. Go inside symfony container with the following command: docker exec -it php-hello_world bash
 2. 2. Run composer installation for symfony and libraries:
       a) composer create-project symfony/skeleton .  (with the dot)
       b) composer require robmorgan/phinx
