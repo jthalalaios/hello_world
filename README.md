@@ -29,7 +29,7 @@ After docker's containers are up for the hello_world’s stack:
       
 3. If the phinx.php file does not exist, type the command: php vendor/bin/phinx init but you need to configurate the file for the mysql driver.
 4. Run the migration with the command : php vendor/bin/phinx migrate 
-5. The hello_world project can be run with the command: php bin/console HelloWorld 1000 200
+5. The hello_world project can be run with the command: php bin/console HelloWorld 1000 200   (Notice: the first number: 1000 is the argument to initialize the notes of the atm and the second argument the number: 200 is the amount of notes which is wanted to be withdraw from the atm)
 6) Note: All above commands need to be run inside the php-hello_world container
 
 
