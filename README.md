@@ -31,3 +31,12 @@ After docker's containers are up for the hello_world’s stack:
 4. Run the migration with the command : php vendor/bin/phinx migrate 
 5. The hello_world project can be run with the command: php bin/console HelloWorld 1000 200
 6) Note: All above commands need to be run inside the php-hello_world container
+
+
+
+Info and links that it would be helpful:
+PHP-FPM (FastCGI Process Manager) is an alternative to FastCGI implementation of PHP with some additional features useful for sites with high traffic. It is the preferred method of processing PHP pages with NGINX and is faster than traditional CGI based methods such as SUPHP or mod_php for running a PHP script
+https://www.php.net/supported-versions.php
+https://docs.docker.com/compose/compose-file/compose-versioning/
+https://symfony.com/doc/current/setup.html
+https://stackoverflow.com/questions/61344927/when-using-docker-compose-3-8-getting-version-is-unsupported-error
