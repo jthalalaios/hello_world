@@ -1,7 +1,7 @@
 
 Docker:
 
-1. Install docker: https://www.docker.com/
+1. Install docker: https://www.docker.com
 2. Make sure your user belongs to docker’s group, else you have to run the commands with sudo
 3. Install docker-compose 
 
@@ -19,19 +19,27 @@ Let’s get started with the hello_world stack:
 4. Up the containers: docker-compose up -d
 
 After docker's containers are up for the hello_world’s stack: 
-1. Go inside symfony container with the following command: docker exec -it php-hello_world bash
-2. 2. Run composer installation for symfony and libraries:
+
+1. Go inside mysql's container with the following command: docker exec -it mysql-hello_world bash
+   a) type: mysql -u root -p   (password for root is: hello_world)
+   b) Create the database named hello_world_db with utf8 with the following command: create database hello_world_db character set utf8mb4 collate utf8mb4_general_ci;
+   
+3. Go inside symfony container with the following command: docker exec -it php-hello_world bash
+
+4. 2. Run composer installation for symfony and libraries:
       a) composer create-project symfony/skeleton .  (with the dot)
       b) composer require robmorgan/phinx
       c) composer require symfony/console
       d) composer update
       e) php vendor/bin/phinx migrate 
       
-3. If the phinx.php file does not exist, type the command: php vendor/bin/phinx init but you need to configurate the file for the mysql driver.
-4. Run the migration with the command : php vendor/bin/phinx migrate 
-5. The hello_world project can be run with the command: php bin/console HelloWorld 1000 200   (Notice: the first number: 1000 is the argument to initialize the notes of the atm and the second argument the number: 200 is the amount of notes which is wanted to be withdraw from the atm)
-6) Note: All above commands need to be run inside the php-hello_world container
+5. If the phinx.php file does not exist, type the command: php vendor/bin/phinx init but you need to configurate the file for the mysql driver.
 
+6. Run the migration with the command : php vendor/bin/phinx migrate 
+
+7. The hello_world project can be run with the command: php bin/console HelloWorld 1000 200   (Notice: the first number: 1000 is the argument to initialize the notes of the atm and the second argument the number: 200 is the amount of notes which is wanted to be withdraw from the atm)
+
+8) Note: All above commands need to be run inside the php-hello_world container
 
 
 Links that it would be helpful:
