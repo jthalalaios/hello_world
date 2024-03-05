@@ -20,11 +20,11 @@ Let’s get started with the hello_world stack:
 
 After docker's containers are up for the hello_world’s stack: 
 
-1. Go inside mysql's container with the following command: docker exec -it mysql-hello_world bash
+1. Go inside to the mysql's container with the following command: docker exec -it mysql-hello_world bash
    a) type: mysql -u root -p   (password for root is: hello_world)
    b) Create the database named hello_world_db with utf8 with the following command: create database hello_world_db character set utf8mb4 collate utf8mb4_general_ci;
    
-3. Go inside symfony container with the following command: docker exec -it php-hello_world bash
+3. Go inside to the symfony's container with the following command: docker exec -it php-hello_world bash
 
 4. 2. Run composer installation for symfony and libraries:
       a) composer create-project symfony/skeleton .  (with the dot)  Warning: In the case that the app folder is not empty then skip this step.
