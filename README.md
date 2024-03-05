@@ -31,7 +31,6 @@ After docker's containers are up for the hello_world’s stack:
       b) composer require robmorgan/phinx
       c) composer require symfony/console
       d) composer update
-      e) php vendor/bin/phinx migrate 
       
 5. If the phinx.php file does not exist, type the command: php vendor/bin/phinx init but you need to configurate the file for the mysql driver.
 
