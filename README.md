@@ -27,7 +27,7 @@ After docker's containers are up for the hello_world’s stack:
 3. Go inside symfony container with the following command: docker exec -it php-hello_world bash
 
 4. 2. Run composer installation for symfony and libraries:
-      a) composer create-project symfony/skeleton .  (with the dot)
+      a) composer create-project symfony/skeleton .  (with the dot)  Warning: In the case that the app folder is not empty then skip this step.
       b) composer require robmorgan/phinx
       c) composer require symfony/console
       d) composer update
